@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    html{
+      box-sizing: border-box;
+    }
+    @font-face{
+        font-family: 'inter-Extrabold';
+        src: url('assets/fonts/static/Inter-ExtraBold.ttf');
+    }
+
+   @font-face{
+        font-family: 'inter-bold';
+        src: url('assets/fonts/static/Inter-Bold.ttf');
+    }
+    @font-face{
+      font-family: 'inter-regular';
+      src: url('assets/fonts/static/Inter-Regular.ttf');
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    #side-bar{
+      
+      margin-right: 160px;
+      padding: 10px 30px;
+      background-color: hsl(240, 100%, 5%);
+      box-sizing: border-box;
+      float : right;
+      width : 350px;
+      height: auto;
+      /* padding : 10px 10px; */
+    }
+
+  
+
+  
+    body{
+      font-family: inter-regular;
+      box-sizing: border-box;
+      margin-left: 165px; 
+      margin-top: 100px;
+      background-image: url('assets/images/logo.svg');
+      background-repeat: no-repeat;
+      background-position: 187px 88px;
+    }
+    #navbar{
+      color: hsl(236, 13%, 42%);
+      font-weight: bold;
+      text-align: right;
+      list-style-type: none;
+      padding-bottom: 40px;
+      padding-left: 45vw;
+      display: flex;
+
+    }
+
+    /*img#logo {
+      margin-top: 100px;
+      margin-left: 165px;
+      
+    }*/
+    /* aside{
+      /* box-sizing: border-box;
+      padding-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 200px;
+      /* width : 350px; 
+      float : right; 
+    } */
+
+    ul#navbar li a{
+      text-decoration: none;
+      padding: 8px 16px;
+      
+    }
+  
+    ul#navbar li a:hover{
+      color: hsl(5, 85%, 63%);
+    }
+
+    #web-3{
+      clear: both;
+      /*margin-left: 165px;*/
+      /* margin-top: 50px; */
+      width : 45vw;
+      padding-bottom: 20px;
+    }
+
+    .thumbnail{
+      float: left;
+      width: 100px;
+      padding-right: 10px;
+    }
+
+    section h3{
+      color:hsl(240, 100%, 5%);
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    #side-bar a:hover{
+      color: hsl(35, 77%, 62%);
+    }
+    aside h2{
+      color: hsl(35, 77%, 62%);
+    }
+    #side-bar{
+      color : hsl(233, 8%, 79%) ;
+    }
+    button :hover{
+      background-color : hsl(5, 85%, 63%);
+    }
+    button{
+      /*  */
+      /* color:hsl(233, 8%, 79%) */
+      padding: 10px 40px ;
+      /* width: 100px;
+      height: 100px; */
+      /* border-radius: 15px; */
+      background-color: hsl(240, 100%, 5%);
+      color: hsl(36, 100%, 99%);
+      border: none;
+    }
+    .num :hover{
+      color: hsl(5, 85%, 63%);
+    }
+     .num{
+      color: hsl(233, 8%, 79%);
+      font-size: 30px;
+      margin: 0;
+    }
+    
+    
+    .readMore{
+      width : 150px;
+      padding: 10px;
+      text-align: center;
+      /* padding: 15px 30px; */
+      background-color: hsl(240, 100%, 5%);
+      color:hsl(233, 8%, 79%);
+    }
+    .content{
+      font-size: 15px;
+      width : 60%;
+      float: left;
+    }
+    .b{
+        float: left;
+        display: block;
+        width: 350px;
+        height: 127px;
+    }
+    .content-web3{
+      width: 300px;
+      float: left;
+    }
+    .container{
+      margin-bottom: 50px;
+      float: left;
+      width: 100%;
+    }
+    #web3-contentHeader{
+        
+        font-family: inter-Extrabold;
+        font-size: 50px;
+        color:hsl(240, 100%, 5%);
+              /* height : 100px */
+    }
+
+  </style>
+  <script defer src ="index.js"></script>
+</head>
+<body>
+  
+  <div>
+  <!--<img id ='logo' src ='assets/images/logo.svg'>-->
+  <navbar>
+  <ul id="navbar">
+    <li><a href = "">Home</a></li>
+    <li><a href = "">New</a></li>
+    <li><a href = "">Popular</a></li>
+    <li><a href = "">Trending</a></li>
+    <li><a href = "">Categories</a></li>
+  </ul>
+ </navbar>
+
+  </div>
+  <div class ="container">
+  <aside>
+    <div id='side-bar'>
+     <h2>New</h2> 
+
+      <a href=""><h3>Hydrogen VS Electric Cars</h3></a>
+  
+        <p>
+        Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+
+        <br>
+      <a href=""><h3>Downsides of AI Artistry</h3></a> 
+        <p>
+        What are the possible adverse effects of on-demand AI image generation?
+        </p>
+
+        <br>
+      <a href=""><h3>Is VC Funding Drying Up?</h3></a>
+      <p>Private funding on VC firms is down 50% YOY. We take a look at what that means</p>
+  </aside>
+  <img id = 'web-3' src = 'assets/images/image-web-3-desktop.jpg'>
+  <div class ="content-web3" ><p id="web3-contentHeader">The Bright Future of Web 3.0?</p></div>
+<div class="content-web3" 
+    style="color: hsl(236, 13%, 42%);
+            margin-top : 50px;"><div
+    style="
+          padding-bottom: 30px;">
+    We dive into the next evolution of the web that 
+    claims to put the power of the platforms back into
+    the hands of the people. 
+    But is it really fulfilling its promise?
+  </div>
+
+      <div><div id="readMore-container" class="readMore">
+          <a href="" >Read More</a>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+ <article>
+  <div class='b'><img class ='thumbnail' src = 'assets/images/image-retro-pcs.jpg'>
+  <section class = 'content'><h1 class="num"><a href="">01</a></h1><h3>Reviving Retro PCs</h3>
+  <p>What happens when old PCs are given modern upgrades?</p></section></div>
+
+  <div class='b'><img  class ='thumbnail' src = 'assets/images/image-top-laptops.jpg'>
+  <section class = 'content'><h1 class="num"><a href="">02</a></h1><h3>Top 10 Laptops of 2022</h3>
+  <p>Our best picks for various needs and budgets.</p></section></div>
+
+  <div class='b'><img class= 'thumbnail' src = 'assets/images/image-gaming-growth.jpg'>
+  <section class = 'content'><h1 class="num"><a href="">03</a></h1><h3>The Growth of Gaming</h3>
+  <p>How the pandemic has sparked fresh opportunities.</p></section></div>
+  </article>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Igwedinma Ifechukwu</a>.
+  </div>
+</body>
+</html>

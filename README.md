@@ -1,3 +1,3 @@
 # newsite-landing-page
-landing page or a newsite
+landing page for a newsite
 made with html and css
